@@ -6,7 +6,7 @@
 /*   By: cweather <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/01 16:39:23 by cweather          #+#    #+#             */
-/*   Updated: 2017/09/29 15:36:57 by cweather         ###   ########.fr       */
+/*   Updated: 2017/10/12 01:32:14 by cweather         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <fcntl.h>
 # include <limits.h>
+# include <string.h>
 # define BUFF_SIZE	1
 # define MAX_FD		5000
 
@@ -84,7 +85,9 @@ void			ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstadd(t_list **alst, t_list *new);
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
+size_t			ft_lstcount(t_list *lst);
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+void			ft_lstrev(t_list **alst);
 void			ft_error(char *str);
 int				get_next_line(const int fd, char **line);
 char			**ft_sstradd(char **s, char *add);
@@ -93,5 +96,8 @@ char			**ft_sstrdup(char **src);
 int				ft_sstrlen(char **s);
 char			**ft_sstrnew(size_t size);
 char			*ft_sstrtostr(char **s, char *sep);
+float			ft_fabs(float f);
+int				ft_countwords(char *str, char sep);
+int				ft_splitdel(char ***split);
 
 #endif

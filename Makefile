@@ -6,7 +6,7 @@
 #    By: cweather <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/30 20:58:30 by cweather          #+#    #+#              #
-#    Updated: 2017/09/29 15:36:27 by cweather         ###   ########.fr        #
+#    Updated: 2017/10/12 01:31:47 by cweather         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,7 @@ SRC = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c \
 	ft_toupper.c ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c \
 	ft_lstiter.c ft_lstmap.c ft_error.c get_next_line.c ft_sstradd.c \
 	ft_sstrdel.c ft_sstrdup.c ft_sstrlen.c ft_sstrnew.c ft_sstrtostr.c \
+	ft_fabs.c ft_countwords.c ft_lstcount.c ft_splitdel.c ft_lstrev.c \
 
 HEADER = libft.h
 
